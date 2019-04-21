@@ -19,7 +19,7 @@ def get_evaluate_data(file):
 
             if EVA_PART in line:
                 #字符串转化成json
-                _json=json.dumps(line)
+                _json=json.dumps(line[0:line.index("}")+1])
                 #再转化成字典
                 dict=eval(json.loads(_json))
                 dict_list.append(dict)
