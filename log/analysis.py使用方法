@@ -1,0 +1,25 @@
+#画图命令使用方法
+1.绘制评估曲线图
+(1)绘制acc(准确度)
+python3 analysis.py --eva log文件名　tag名 acc
+如
+python3 analysis.py --eva log.out　USE_MIL acc
+
+(2)绘制p(精确度)
+python3 analysis.py --eva log文件名　tag名 p
+如
+python3 analysis.py --eva log.out　USE_MIL p
+
+(3)绘制f1(f1值) ...
+(4)绘制r(召回率) ...
+
+2.绘制loss方法
+python3 analysis.py --loss log文件名　tag名
+如
+python3 analysis.py --loss log.out　USE_MIL
+
+3.从多个文件绘制
+#绘制评估曲线
+python3 analysis.py --eva log文件名1　tag名1 log文件名2　tag名2 acc
+#绘制loss
+python3 analysis.py --loss log文件名1　tag名1 log文件名2　tag名2

@@ -1,0 +1,9 @@
+NA
+/location/neighborhood/neighborhood_of
+/location/administrative_division/country
+/people/person/nationality
+/business/person/company
+/people/person/place_lived
+/location/country/capital
+/location/location/contains
+/location/country/administrative_divisions
